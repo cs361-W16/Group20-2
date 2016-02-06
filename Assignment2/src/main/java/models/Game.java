@@ -93,14 +93,19 @@ public class Game {
     }
 
     public void move(int colFrom, int colTo) {
-        Card cardToMove = getTopCard(colFrom);
-        this.removeCardFromCol(colFrom);
-        this.addCardToCol(colTo,cardToMove);
+        if (colHasCards(colTo) == false)
+        {
+            Card cardToMove = getTopCard(colFrom);
+            this.removeCardFromCol(colFrom);
+            this.addCardToCol(colTo,cardToMove);
+        }
+        else
+        {
+            System.out.println("Don\'t you dare to move that card");
+        }
     }
 
-    private void addCardToCol(int colTo, Card cardToMove) {
-        cols.get(colTo).add(cardToMove);
-    }
+    private void addCardToCol(int colTo, Card cardToMove) {cols.get(colTo).add(cardToMove);}
 
     private void removeCardFromCol(int colFrom) {
         this.cols.get(colFrom).remove(this.cols.get(colFrom).size()-1);

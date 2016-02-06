@@ -7,7 +7,7 @@
 <div id ="topright">
     <button id="dealButton"><img src="../../assets/cardback.png" width="160" height="244" border="0" alt="javascript button"></button>
 </div>
-<table class = "center">
+<table id ="tableOfCards" class = "center">
     <tr class="title">
         <td>Column0</td>
         <td >Column1</td>
@@ -17,7 +17,7 @@
 
     <tr><td class="columnOfCards" id="c0">
         <table>
-            <tr><td class="cardLocation l0"></td></tr>
+            <tr  id="col0card"><td class="cardLocation l0"></td></tr>
             <tr><td class="cardLocation l1"></td></tr>
             <tr><td class="cardLocation l2"></td></tr>
             <tr><td class="cardLocation l3"></td></tr>
@@ -35,7 +35,7 @@
     </td>
         <td class="columnOfCards" id="c1">
             <table>
-                <tr><td class="cardLocation l0"></td></tr>
+                <tr id="col1card"><td class="cardLocation l0"></td></tr>
                 <tr><td class="cardLocation l1"></td></tr>
                 <tr><td class="cardLocation l2"></td></tr>
                 <tr><td class="cardLocation l3"></td></tr>
@@ -53,7 +53,7 @@
         </td>
         <td class="columnOfCards" id="c2">
             <table>
-                <tr><td class="cardLocation l0"></td></tr>
+                <tr id="col2card"><td class="cardLocation l0"></td></tr>
                 <tr><td class="cardLocation l1"></td></tr>
                 <tr><td class="cardLocation l2"></td></tr>
                 <tr><td class="cardLocation l3"></td></tr>
@@ -71,7 +71,7 @@
         </td>
         <td class="columnOfCards" id="c3">
             <table>
-                <tr><td class="cardLocation l0"></td></tr>
+                <tr id="col3card"><td class="cardLocation l0"></td></tr>
                 <tr><td class="cardLocation l1"></td></tr>
                 <tr><td class="cardLocation l2"></td></tr>
                 <tr><td class="cardLocation l3"></td></tr>
@@ -153,7 +153,6 @@ display(data);},
 contentType:"application/json; charset=utf-8",
 dataType:"json",
 });
-
 }
 
 
@@ -174,15 +173,37 @@ $("#Remove4").click(function(){
 $("#moveButton").click(function(){
 var colFrom = $("#from_col").val();
 var colTo = $("#to_col").val();
+
+//----This should warn about illegal moves---------
+/*
+var emptyCol = "<td class=\"cardLocation l0\"></td>";
+var cols = [$(document.getElementById("col0card").innerHTML), $(document.getElementById("col1card").innerHTML), $(document.getElementById("col2card").innerHTML), $(document.getElementById("col3card").innerHTML)];
+
+ if (cols[0] == emptyCol || cols[1] == emptyCol || cols[2] == emptyCol || cols[3] == emptyCol) {
+    $.ajax({
+        type: "POST",
+        url: "/moveCard/"+colFrom+"/"+colTo,
+        data: JSON.stringify(game),
+        success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
+            game = data;
+            display(data);},
+        contentType:"application/json; charset=utf-8",
+        dataType:"json",
+    });
+  } else {
+    window.alert("You can only move card to empty column");
+ }
+*/
+//---------------------------------------------------
 $.ajax({
-  type: "POST",
-  url: "/moveCard/"+colFrom+"/"+colTo,
-  data: JSON.stringify(game),
-  success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
+   type: "POST",
+   url: "/moveCard/"+colFrom+"/"+colTo,
+   data: JSON.stringify(game),
+   success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
         game = data;
         display(data);},
-  contentType:"application/json; charset=utf-8",
-  dataType:"json",
+   contentType:"application/json; charset=utf-8",
+   dataType:"json",
 });
 });
 
