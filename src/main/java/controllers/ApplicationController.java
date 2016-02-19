@@ -35,13 +35,12 @@ public class ApplicationController {
         return Results.html();
     }
 
-    public Result acesUp() {
-        return Results.html().template("views/AcesUp/SpanishAcesUp.flt.html");
+    public Result AcesUp() {
+        return Results.html().template("views/AcesUp/AcesUp.flt.html");
     }
     
     public Result gameGet(){
         Game g = new SpanishGame();
-        g.buildDeck();
         g.shuffle();
         g.dealFour();
 
