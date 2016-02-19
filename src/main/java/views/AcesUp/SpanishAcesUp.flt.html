@@ -615,7 +615,7 @@ $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords10.jpg");
 
 }
 
-$.getJSON("http://localhost:8080/game", function( data ) {
+$.getJSON("http://localhost:8080/Spanishgame", function( data ) {
 display(data);
 game = data;
 });
@@ -624,7 +624,7 @@ game = data;
 $("#dealButton").click(function(){
 $.ajax({
   type: "POST",
-  url: "/dealGame",
+  url: "/SdealGame",
   data: JSON.stringify(game),
   success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
         game = data;
@@ -638,7 +638,7 @@ $.ajax({
 function removeCard(colNumber){
 $.ajax({
 type: "POST",
-url: "/removeCard/"+colNumber,
+url: "/SremoveCard/"+colNumber,
 data: JSON.stringify(game),
 success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
 game = data;
@@ -691,7 +691,7 @@ var cols = [$(document.getElementById("col0card").innerHTML), $(document.getElem
 //---------------------------------------------------
 $.ajax({
    type: "POST",
-   url: "/moveCard/"+colFrom+"/"+colTo,
+   url: "/SmoveCard/"+colFrom+"/"+colTo,
    data: JSON.stringify(game),
    success: function(data, status){console.log("Data: " + data + "\nStatus: " + status);
         game = data;
