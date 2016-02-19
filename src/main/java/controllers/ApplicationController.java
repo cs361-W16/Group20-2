@@ -35,6 +35,10 @@ public class ApplicationController {
         return Results.html();
     }
 
+    public Result Choice() {
+        return Results.html().template("views/AcesUp/Choice.html");
+    }
+
     public Result SpanishAcesUp() {
         return Results.html().template("views/AcesUp/SpanishAcesUp.flt.html");
     }
