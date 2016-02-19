@@ -25,17 +25,17 @@ public class testGame {
     @Test
     public void testAmericanDeckCount(){
         AmericanGame g = new AmericanGame();
-//        assertEquals(52,g.deck.size());
+        assertEquals(52,g.deck.size());
         g.remove(2);
-  //      assertEquals(51,g.deck.size());
+        assertEquals(51,g.deck.size());
     }
 
     @Test
     public void testSpanishDeckCount() {
         Game s = new SpanishGame();
-    //   assertEquals(40,s.deck.size());
+           assertEquals(40,s.deck.size());
         s.remove(2);
-      //  assertEquals(39,s.deck.size());
+           assertEquals(39,s.deck.size());
     }
 
 
