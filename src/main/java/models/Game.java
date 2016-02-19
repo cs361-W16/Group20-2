@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-/**
+/*
  * Created by michaelhilton on 1/25/16.
  */
 public abstract class Game {
@@ -13,12 +13,12 @@ public abstract class Game {
 
     public java.util.List<java.util.List<Card>> cols = new ArrayList<>();
 
-
     public Game(){
         cols.add(new ArrayList<Card>());
         cols.add(new ArrayList<Card>());
         cols.add(new ArrayList<Card>());
         cols.add(new ArrayList<Card>());
+        this.buildDeck();
     }
 
 
