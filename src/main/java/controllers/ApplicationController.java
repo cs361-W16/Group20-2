@@ -21,6 +21,8 @@ import models.Game;
 import ninja.Context;
 import ninja.Result;
 import ninja.Results;
+import models.AmericanGame;
+import models.SpanishGame;
 
 import com.google.inject.Singleton;
 import ninja.params.PathParam;
@@ -34,11 +36,11 @@ public class ApplicationController {
     }
 
     public Result acesUp() {
-        return Results.html().template("views/AcesUp/AcesUp.flt.html");
+        return Results.html().template("views/AcesUp/SpanishAcesUp.flt.html");
     }
     
     public Result gameGet(){
-        Game g = new AmericanGame();
+        Game g = new SpanishGame();
         g.buildDeck();
         g.shuffle();
         g.dealFour();
