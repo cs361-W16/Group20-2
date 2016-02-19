@@ -13,8 +13,13 @@ public abstract class Game {
 
     public java.util.List<java.util.List<Card>> cols = new ArrayList<>();
 
-
-
+    public Game(){
+        cols.add(new ArrayList<Card>());
+        cols.add(new ArrayList<Card>());
+        cols.add(new ArrayList<Card>());
+        cols.add(new ArrayList<Card>());
+        this.buildDeck();
+    }
 
 
     public abstract void buildDeck();
