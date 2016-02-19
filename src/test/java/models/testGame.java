@@ -9,12 +9,6 @@ import static org.junit.Assert.*;
  */
 public class testGame {
 
-/*    @Test
-    public void testGameCreation(){
-        Game g = new Game();
-        assertNotNull(g);
-    }*/
-
     @Test
     public void testAmericanGameCreation() {
         Game g = new AmericanGame();
@@ -113,10 +107,10 @@ public class testGame {
         Game g = new SpanishGame();
         g.buildDeck();
         g.customDeal(0,3,6,9);
-//        assertEquals("2Clubs",g.cols.get(0).get(0).toString());
-  //      assertEquals("3Clubs",g.cols.get(1).get(0).toString());
-    //    assertEquals("4Clubs",g.cols.get(2).get(0).toString());
-      //  assertEquals("5Clubs",g.cols.get(3).get(0).toString());
+        assertEquals("1Clubs",g.cols.get(0).get(0).toString());
+        assertEquals("2Clubs",g.cols.get(1).get(0).toString());
+        assertEquals("3Clubs",g.cols.get(2).get(0).toString());
+        assertEquals("4Clubs",g.cols.get(3).get(0).toString());
     }
 
     @Test
