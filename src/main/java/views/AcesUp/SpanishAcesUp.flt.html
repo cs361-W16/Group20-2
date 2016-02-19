@@ -119,693 +119,538 @@ console.log(game);
 
 $( '.columnOfCards .cardLocation' ).attr("background","");
 
+
     $.each(game.cols[0], function( key, val ) {
-    if(val.value==2&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/2_of_clubs.png");
+    if(val.value==1&& val.suit =="Clubs"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs1.jpg");
         }
-    if(val.value==3&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/3_of_clubs.png");
-        }
-        if(val.value==4&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/4_of_clubs.png");
-        }
-        if(val.value==5&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/5_of_clubs.png");
-        }
-        if(val.value==6&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/6_of_clubs.png");
-        }
-        if(val.value==7&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/7_of_clubs.png");
-        }
-        if(val.value==8&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/8_of_clubs.png");
-        }
-        if(val.value==9&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/9_of_clubs.png");
-        }
-        if(val.value==10&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/10_of_clubs.png");
-        }
-
-        if(val.value==11&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/jack_of_clubs.png");
-        }
-        if(val.value==12&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/queen_of_clubs.png");
-        }
-        if(val.value==13&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/king_of_clubs.png");
-        }
-        if(val.value==14&& val.suit =="Clubs"){
-        $( '#c0 .l'+key ).attr("background","assets/images/ace_of_clubs.png");
-        }
-
-
-        if(val.value==2&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/2_of_spades.png");
-        }
-    if(val.value==3&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/3_of_spades.png");
-        }
-        if(val.value==4&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/4_of_spades.png");
-        }
-        if(val.value==5&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/5_of_spades.png");
-        }
-        if(val.value==6&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/6_of_spades.png");
-        }
-        if(val.value==7&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/7_of_spades.png");
-        }
-        if(val.value==8&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/8_of_spades.png");
-        }
-        if(val.value==9&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/9_of_spades.png");
-        }
-        if(val.value==10&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/10_of_spades.png");
-        }
-
-        if(val.value==11&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/jack_of_spades.png");
-        }
-        if(val.value==12&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/queen_of_spades.png");
-        }
-        if(val.value==13&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/king_of_spades.png");
-        }
-        if(val.value==14&& val.suit =="Spades"){
-        $( '#c0 .l'+key ).attr("background","assets/images/ace_of_spades.png");
-        }
-
-
-
-        if(val.value==2&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/2_of_hearts.png");
-        }
-    if(val.value==3&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/3_of_hearts.png");
-        }
-        if(val.value==4&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/4_of_hearts.png");
-        }
-        if(val.value==5&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/5_of_hearts.png");
-        }
-        if(val.value==6&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/6_of_hearts.png");
-        }
-        if(val.value==7&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/7_of_hearts.png");
-        }
-        if(val.value==8&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/8_of_hearts.png");
-        }
-        if(val.value==9&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/9_of_hearts.png");
-        }
-        if(val.value==10&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/10_of_hearts.png");
-        }
-
-        if(val.value==11&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/jack_of_hearts.png");
-        }
-        if(val.value==12&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/queen_of_hearts.png");
-        }
-        if(val.value==13&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/king_of_hearts.png");
-        }
-        if(val.value==14&& val.suit =="Hearts"){
-        $( '#c0 .l'+key ).attr("background","assets/images/ace_of_hearts.png");
-        }
-
-
-         if(val.value==2&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/2_of_diamonds.png");
-        }
-    if(val.value==3&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/3_of_diamonds.png");
-        }
-        if(val.value==4&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/4_of_diamonds.png");
-        }
-        if(val.value==5&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/5_of_diamonds.png");
-        }
-        if(val.value==6&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/6_of_diamonds.png");
-        }
-        if(val.value==7&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/7_of_diamonds.png");
-        }
-        if(val.value==8&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/8_of_diamonds.png");
-        }
-        if(val.value==9&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/9_of_diamonds.png");
-        }
-        if(val.value==10&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/10_of_diamonds.png");
-        }
-
-        if(val.value==11&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/jack_of_diamonds.png");
-        }
-        if(val.value==12&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/queen_of_diamonds.png");
-        }
-        if(val.value==13&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/king_of_diamonds.png");
-        }
-        if(val.value==14&& val.suit =="Diamonds"){
-        $( '#c0 .l'+key ).attr("background","assets/images/ace_of_diamonds.png");
-        }
-
-
-
-
-
-    });
-
- $.each(game.cols[1], function( key, val ) {
         if(val.value==2&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/2_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs2.jpg");
         }
     if(val.value==3&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/3_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs3.jpg");
         }
         if(val.value==4&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/4_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs4.jpg");
         }
         if(val.value==5&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/5_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs5.jpg");
         }
         if(val.value==6&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/6_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs6.jpg");
         }
         if(val.value==7&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/7_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs7.jpg");
         }
         if(val.value==8&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/8_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs8.jpg");
         }
         if(val.value==9&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/9_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs9.jpg");
         }
         if(val.value==10&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/10_of_clubs.png");
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/clubs10.jpg");
         }
 
-        if(val.value==11&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/jack_of_clubs.png");
+if(val.value==1&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins1.jpg");
         }
-        if(val.value==12&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/queen_of_clubs.png");
+        if(val.value==2&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins2.jpg");
         }
-        if(val.value==13&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/king_of_clubs.png");
+    if(val.value==3&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins3.jpg");
         }
-        if(val.value==14&& val.suit =="Clubs"){
-        $( '#c1 .l'+key ).attr("background","assets/images/ace_of_clubs.png");
+        if(val.value==4&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins4.jpg");
         }
-
-
-        if(val.value==2&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/2_of_spades.png");
+        if(val.value==5&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins5.jpg");
         }
-    if(val.value==3&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/3_of_spades.png");
+        if(val.value==6&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins6.jpg");
         }
-        if(val.value==4&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/4_of_spades.png");
+        if(val.value==7&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins7.jpg");
         }
-        if(val.value==5&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/5_of_spades.png");
+        if(val.value==8&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins8.jpg");
         }
-        if(val.value==6&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/6_of_spades.png");
+        if(val.value==9&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins9.jpg");
         }
-        if(val.value==7&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/7_of_spades.png");
-        }
-        if(val.value==8&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/8_of_spades.png");
-        }
-        if(val.value==9&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/9_of_spades.png");
-        }
-        if(val.value==10&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/10_of_spades.png");
-        }
-
-        if(val.value==11&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/jack_of_spades.png");
-        }
-        if(val.value==12&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/queen_of_spades.png");
-        }
-        if(val.value==13&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/king_of_spades.png");
-        }
-        if(val.value==14&& val.suit =="Spades"){
-        $( '#c1 .l'+key ).attr("background","assets/images/ace_of_spades.png");
+        if(val.value==10&& val.suit =="Coins"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/coins10.jpg");
         }
 
 
-
-        if(val.value==2&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/2_of_hearts.png");
+        if(val.value==1&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups1.jpg");
         }
-    if(val.value==3&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/3_of_hearts.png");
+        if(val.value==2&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups2.jpg");
         }
-        if(val.value==4&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/4_of_hearts.png");
+    if(val.value==3&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups3.jpg");
         }
-        if(val.value==5&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/5_of_hearts.png");
+        if(val.value==4&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups4.jpg");
         }
-        if(val.value==6&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/6_of_hearts.png");
+        if(val.value==5&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups5.jpg");
         }
-        if(val.value==7&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/7_of_hearts.png");
+        if(val.value==6&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups6.jpg");
         }
-        if(val.value==8&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/8_of_hearts.png");
+        if(val.value==7&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups7.jpg");
         }
-        if(val.value==9&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/9_of_hearts.png");
+        if(val.value==8&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups8.jpg");
         }
-        if(val.value==10&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/10_of_hearts.png");
+        if(val.value==9&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups9.jpg");
         }
-
-        if(val.value==11&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/jack_of_hearts.png");
-        }
-        if(val.value==12&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/queen_of_hearts.png");
-        }
-        if(val.value==13&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/king_of_hearts.png");
-        }
-        if(val.value==14&& val.suit =="Hearts"){
-        $( '#c1 .l'+key ).attr("background","assets/images/ace_of_hearts.png");
+        if(val.value==10&& val.suit =="Cups"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/cups10.jpg");
         }
 
 
-         if(val.value==2&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/2_of_diamonds.png");
+          if(val.value==1&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords1.jpg");
         }
-    if(val.value==3&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/3_of_diamonds.png");
+        if(val.value==2&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords2.jpg");
         }
-        if(val.value==4&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/4_of_diamonds.png");
+    if(val.value==3&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords3.jpg");
         }
-        if(val.value==5&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/5_of_diamonds.png");
+        if(val.value==4&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords4.jpg");
         }
-        if(val.value==6&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/6_of_diamonds.png");
+        if(val.value==5&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords5.jpg");
         }
-        if(val.value==7&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/7_of_diamonds.png");
+        if(val.value==6&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords6.jpg");
         }
-        if(val.value==8&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/8_of_diamonds.png");
+        if(val.value==7&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords7.jpg");
         }
-        if(val.value==9&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/9_of_diamonds.png");
+        if(val.value==8&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords8.jpg");
         }
-        if(val.value==10&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/10_of_diamonds.png");
+        if(val.value==9&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords9.jpg");
+        }
+        if(val.value==10&& val.suit =="Swords"){
+        $( '#c0 .l'+key ).attr("background","assets/spanishImages/swords10.jpg");
         }
 
-        if(val.value==11&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/jack_of_diamonds.png");
-        }
-        if(val.value==12&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/queen_of_diamonds.png");
-        }
-        if(val.value==13&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/king_of_diamonds.png");
-        }
-        if(val.value==14&& val.suit =="Diamonds"){
-        $( '#c1 .l'+key ).attr("background","assets/images/ace_of_diamonds.png");
-        }
+
+
 
     });
 
- $.each(game.cols[2], function( key, val ) {
+    $.each(game.cols[1], function( key, val ) {
+    if(val.value==1&& val.suit =="Clubs"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs1.jpg");
+        }
         if(val.value==2&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/2_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs2.jpg");
         }
     if(val.value==3&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/3_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs3.jpg");
         }
         if(val.value==4&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/4_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs4.jpg");
         }
         if(val.value==5&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/5_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs5.jpg");
         }
         if(val.value==6&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/6_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs6.jpg");
         }
         if(val.value==7&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/7_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs7.jpg");
         }
         if(val.value==8&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/8_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs8.jpg");
         }
         if(val.value==9&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/9_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs9.jpg");
         }
         if(val.value==10&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/10_of_clubs.png");
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/clubs10.jpg");
         }
 
-        if(val.value==11&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/jack_of_clubs.png");
+if(val.value==1&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins1.jpg");
         }
-        if(val.value==12&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/queen_of_clubs.png");
+        if(val.value==2&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins2.jpg");
         }
-        if(val.value==13&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/king_of_clubs.png");
+    if(val.value==3&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins3.jpg");
         }
-        if(val.value==14&& val.suit =="Clubs"){
-        $( '#c2 .l'+key ).attr("background","assets/images/ace_of_clubs.png");
+        if(val.value==4&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins4.jpg");
         }
-
-
-        if(val.value==2&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/2_of_spades.png");
+        if(val.value==5&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins5.jpg");
         }
-    if(val.value==3&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/3_of_spades.png");
+        if(val.value==6&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins6.jpg");
         }
-        if(val.value==4&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/4_of_spades.png");
+        if(val.value==7&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins7.jpg");
         }
-        if(val.value==5&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/5_of_spades.png");
+        if(val.value==8&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins8.jpg");
         }
-        if(val.value==6&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/6_of_spades.png");
+        if(val.value==9&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins9.jpg");
         }
-        if(val.value==7&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/7_of_spades.png");
-        }
-        if(val.value==8&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/8_of_spades.png");
-        }
-        if(val.value==9&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/9_of_spades.png");
-        }
-        if(val.value==10&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/10_of_spades.png");
-        }
-
-        if(val.value==11&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/jack_of_spades.png");
-        }
-        if(val.value==12&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/queen_of_spades.png");
-        }
-        if(val.value==13&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/king_of_spades.png");
-        }
-        if(val.value==14&& val.suit =="Spades"){
-        $( '#c2 .l'+key ).attr("background","assets/images/ace_of_spades.png");
+        if(val.value==10&& val.suit =="Coins"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/coins10.jpg");
         }
 
 
-
-        if(val.value==2&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/2_of_hearts.png");
+        if(val.value==1&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups1.jpg");
         }
-    if(val.value==3&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/3_of_hearts.png");
+        if(val.value==2&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups2.jpg");
         }
-        if(val.value==4&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/4_of_hearts.png");
+    if(val.value==3&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups3.jpg");
         }
-        if(val.value==5&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/5_of_hearts.png");
+        if(val.value==4&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups4.jpg");
         }
-        if(val.value==6&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/6_of_hearts.png");
+        if(val.value==5&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups5.jpg");
         }
-        if(val.value==7&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/7_of_hearts.png");
+        if(val.value==6&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups6.jpg");
         }
-        if(val.value==8&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/8_of_hearts.png");
+        if(val.value==7&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups7.jpg");
         }
-        if(val.value==9&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/9_of_hearts.png");
+        if(val.value==8&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups8.jpg");
         }
-        if(val.value==10&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/10_of_hearts.png");
+        if(val.value==9&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups9.jpg");
         }
-
-        if(val.value==11&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/jack_of_hearts.png");
-        }
-        if(val.value==12&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/queen_of_hearts.png");
-        }
-        if(val.value==13&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/king_of_hearts.png");
-        }
-        if(val.value==14&& val.suit =="Hearts"){
-        $( '#c2 .l'+key ).attr("background","assets/images/ace_of_hearts.png");
+        if(val.value==10&& val.suit =="Cups"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/cups10.jpg");
         }
 
 
-         if(val.value==2&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/2_of_diamonds.png");
+          if(val.value==1&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords1.jpg");
         }
-    if(val.value==3&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/3_of_diamonds.png");
+        if(val.value==2&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords2.jpg");
         }
-        if(val.value==4&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/4_of_diamonds.png");
+    if(val.value==3&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords3.jpg");
         }
-        if(val.value==5&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/5_of_diamonds.png");
+        if(val.value==4&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords4.jpg");
         }
-        if(val.value==6&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/6_of_diamonds.png");
+        if(val.value==5&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords5.jpg");
         }
-        if(val.value==7&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/7_of_diamonds.png");
+        if(val.value==6&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords6.jpg");
         }
-        if(val.value==8&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/8_of_diamonds.png");
+        if(val.value==7&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords7.jpg");
         }
-        if(val.value==9&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/9_of_diamonds.png");
+        if(val.value==8&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords8.jpg");
         }
-        if(val.value==10&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/10_of_diamonds.png");
+        if(val.value==9&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords9.jpg");
+        }
+        if(val.value==10&& val.suit =="Swords"){
+        $( '#c1 .l'+key ).attr("background","assets/spanishImages/swords10.jpg");
         }
 
-        if(val.value==11&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/jack_of_diamonds.png");
-        }
-        if(val.value==12&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/queen_of_diamonds.png");
-        }
-        if(val.value==13&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/king_of_diamonds.png");
-        }
-        if(val.value==14&& val.suit =="Diamonds"){
-        $( '#c2 .l'+key ).attr("background","assets/images/ace_of_diamonds.png");
-        }
+
+
 
     });
 
- $.each(game.cols[3], function( key, val ) {
+
+    $.each(game.cols[2], function( key, val ) {
+    if(val.value==1&& val.suit =="Clubs"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs1.jpg");
+        }
         if(val.value==2&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/2_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs2.jpg");
         }
     if(val.value==3&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/3_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs3.jpg");
         }
         if(val.value==4&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/4_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs4.jpg");
         }
         if(val.value==5&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/5_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs5.jpg");
         }
         if(val.value==6&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/6_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs6.jpg");
         }
         if(val.value==7&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/7_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs7.jpg");
         }
         if(val.value==8&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/8_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs8.jpg");
         }
         if(val.value==9&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/9_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs9.jpg");
         }
         if(val.value==10&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/10_of_clubs.png");
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/clubs10.jpg");
         }
 
-        if(val.value==11&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/jack_of_clubs.png");
+if(val.value==1&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins1.jpg");
         }
-        if(val.value==12&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/queen_of_clubs.png");
+        if(val.value==2&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins2.jpg");
         }
-        if(val.value==13&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/king_of_clubs.png");
+    if(val.value==3&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins3.jpg");
         }
-        if(val.value==14&& val.suit =="Clubs"){
-        $( '#c3 .l'+key ).attr("background","assets/images/ace_of_clubs.png");
+        if(val.value==4&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins4.jpg");
         }
-
-
-        if(val.value==2&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/2_of_spades.png");
+        if(val.value==5&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins5.jpg");
         }
-    if(val.value==3&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/3_of_spades.png");
+        if(val.value==6&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins6.jpg");
         }
-        if(val.value==4&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/4_of_spades.png");
+        if(val.value==7&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins7.jpg");
         }
-        if(val.value==5&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/5_of_spades.png");
+        if(val.value==8&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins8.jpg");
         }
-        if(val.value==6&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/6_of_spades.png");
+        if(val.value==9&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins9.jpg");
         }
-        if(val.value==7&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/7_of_spades.png");
-        }
-        if(val.value==8&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/8_of_spades.png");
-        }
-        if(val.value==9&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/9_of_spades.png");
-        }
-        if(val.value==10&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/10_of_spades.png");
-        }
-
-        if(val.value==11&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/jack_of_spades.png");
-        }
-        if(val.value==12&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/queen_of_spades.png");
-        }
-        if(val.value==13&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/king_of_spades.png");
-        }
-        if(val.value==14&& val.suit =="Spades"){
-        $( '#c3 .l'+key ).attr("background","assets/images/ace_of_spades.png");
+        if(val.value==10&& val.suit =="Coins"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/coins10.jpg");
         }
 
 
-
-        if(val.value==2&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/2_of_hearts.png");
+        if(val.value==1&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups1.jpg");
         }
-    if(val.value==3&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/3_of_hearts.png");
+        if(val.value==2&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups2.jpg");
         }
-        if(val.value==4&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/4_of_hearts.png");
+    if(val.value==3&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups3.jpg");
         }
-        if(val.value==5&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/5_of_hearts.png");
+        if(val.value==4&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups4.jpg");
         }
-        if(val.value==6&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/6_of_hearts.png");
+        if(val.value==5&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups5.jpg");
         }
-        if(val.value==7&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/7_of_hearts.png");
+        if(val.value==6&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups6.jpg");
         }
-        if(val.value==8&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/8_of_hearts.png");
+        if(val.value==7&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups7.jpg");
         }
-        if(val.value==9&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/9_of_hearts.png");
+        if(val.value==8&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups8.jpg");
         }
-        if(val.value==10&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/10_of_hearts.png");
+        if(val.value==9&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups9.jpg");
         }
-
-        if(val.value==11&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/jack_of_hearts.png");
-        }
-        if(val.value==12&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/queen_of_hearts.png");
-        }
-        if(val.value==13&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/king_of_hearts.png");
-        }
-        if(val.value==14&& val.suit =="Hearts"){
-        $( '#c3 .l'+key ).attr("background","assets/images/ace_of_hearts.png");
+        if(val.value==10&& val.suit =="Cups"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/cups10.jpg");
         }
 
 
-         if(val.value==2&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/2_of_diamonds.png");
+          if(val.value==1&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords1.jpg");
         }
-    if(val.value==3&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/3_of_diamonds.png");
+        if(val.value==2&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords2.jpg");
         }
-        if(val.value==4&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/4_of_diamonds.png");
+    if(val.value==3&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords3.jpg");
         }
-        if(val.value==5&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/5_of_diamonds.png");
+        if(val.value==4&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords4.jpg");
         }
-        if(val.value==6&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/6_of_diamonds.png");
+        if(val.value==5&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords5.jpg");
         }
-        if(val.value==7&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/7_of_diamonds.png");
+        if(val.value==6&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords6.jpg");
         }
-        if(val.value==8&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/8_of_diamonds.png");
+        if(val.value==7&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords7.jpg");
         }
-        if(val.value==9&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/9_of_diamonds.png");
+        if(val.value==8&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords8.jpg");
         }
-        if(val.value==10&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/10_of_diamonds.png");
+        if(val.value==9&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords9.jpg");
+        }
+        if(val.value==10&& val.suit =="Swords"){
+        $( '#c2 .l'+key ).attr("background","assets/spanishImages/swords10.jpg");
         }
 
-        if(val.value==11&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/jack_of_diamonds.png");
-        }
-        if(val.value==12&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/queen_of_diamonds.png");
-        }
-        if(val.value==13&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/king_of_diamonds.png");
-        }
-        if(val.value==14&& val.suit =="Diamonds"){
-        $( '#c3 .l'+key ).attr("background","assets/images/ace_of_diamonds.png");
-        }
+
+
 
     });
+
+    $.each(game.cols[3], function( key, val ) {
+    if(val.value==1&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs1.jpg");
+        }
+        if(val.value==2&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs2.jpg");
+        }
+    if(val.value==3&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs3.jpg");
+        }
+        if(val.value==4&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs4.jpg");
+        }
+        if(val.value==5&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs5.jpg");
+        }
+        if(val.value==6&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs6.jpg");
+        }
+        if(val.value==7&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs7.jpg");
+        }
+        if(val.value==8&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs8.jpg");
+        }
+        if(val.value==9&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs9.jpg");
+        }
+        if(val.value==10&& val.suit =="Clubs"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/clubs10.jpg");
+        }
+
+if(val.value==1&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins1.jpg");
+        }
+        if(val.value==2&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins2.jpg");
+        }
+    if(val.value==3&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins3.jpg");
+        }
+        if(val.value==4&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins4.jpg");
+        }
+        if(val.value==5&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins5.jpg");
+        }
+        if(val.value==6&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins6.jpg");
+        }
+        if(val.value==7&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins7.jpg");
+        }
+        if(val.value==8&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins8.jpg");
+        }
+        if(val.value==9&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins9.jpg");
+        }
+        if(val.value==10&& val.suit =="Coins"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/coins10.jpg");
+        }
+
+
+        if(val.value==1&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups1.jpg");
+        }
+        if(val.value==2&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups2.jpg");
+        }
+    if(val.value==3&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups3.jpg");
+        }
+        if(val.value==4&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups4.jpg");
+        }
+        if(val.value==5&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups5.jpg");
+        }
+        if(val.value==6&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups6.jpg");
+        }
+        if(val.value==7&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups7.jpg");
+        }
+        if(val.value==8&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups8.jpg");
+        }
+        if(val.value==9&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups9.jpg");
+        }
+        if(val.value==10&& val.suit =="Cups"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/cups10.jpg");
+        }
+
+
+          if(val.value==1&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords1.jpg");
+        }
+        if(val.value==2&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords2.jpg");
+        }
+    if(val.value==3&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords3.jpg");
+        }
+        if(val.value==4&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords4.jpg");
+        }
+        if(val.value==5&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords5.jpg");
+        }
+        if(val.value==6&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords6.jpg");
+        }
+        if(val.value==7&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords7.jpg");
+        }
+        if(val.value==8&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords8.jpg");
+        }
+        if(val.value==9&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords9.jpg");
+        }
+        if(val.value==10&& val.suit =="Swords"){
+        $( '#c3 .l'+key ).attr("background","assets/spanishImages/swords10.jpg");
+        }
+
+
+
+
+    });
+
+
+
 
 
 

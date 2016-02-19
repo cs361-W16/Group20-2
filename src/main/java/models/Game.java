@@ -13,12 +13,12 @@ public abstract class Game {
 
     public java.util.List<java.util.List<Card>> cols = new ArrayList<>();
 
-
     public Game(){
         cols.add(new ArrayList<Card>());
         cols.add(new ArrayList<Card>());
         cols.add(new ArrayList<Card>());
         cols.add(new ArrayList<Card>());
+        this.buildDeck();
     }
 
 
@@ -31,6 +31,7 @@ public abstract class Game {
     }
 
     public void dealFour() {
+        System.out.println("tried to deal");
         for(int i = 0; i < 4; i++){
             cols.get(i).add(deck.get(deck.size()-1));
             deck.remove(deck.size()-1);
@@ -50,6 +51,7 @@ public abstract class Game {
     }
 
     public void remove(int columnNumber) {
+        System.out.println("tried to remove");
         if(colHasCards(columnNumber)) {
             Card c = getTopCard(columnNumber);
             boolean removeCard = false;
